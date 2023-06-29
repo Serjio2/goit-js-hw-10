@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".breed-select");console.log(e),fetch("https://api.thecatapi.com/v1/breeds?api_key=live_Ltm2GBWPpfVNBkV01FC69DA1X4Xk5kGZBGw4eapAO9DTZDepX49nl7yBbmf24740").then((function(e){return e.json()})).then((function(t){for(var n=0;n<t.length;n+=1){var o=document.createElement("option");e.append(o),o.textContent=t[n].name}}))}();
+//# sourceMappingURL=index.0ad10468.js.map
