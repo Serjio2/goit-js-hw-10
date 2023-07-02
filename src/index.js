@@ -1,6 +1,6 @@
-import { fetchBreeds, fetchCatByBreed } from './js/cat-api';
 
 // import SlimSelect from 'slim-select';
+import { fetchBreeds, fetchCatByBreed } from './js/cat-api';
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
@@ -46,7 +46,7 @@ fetchBreeds()
 
 
 
-selectItemEl.addEventListener('change', createMarkup = (data) => {
+selectItemEl.addEventListener('change', function createMarkup(data) {
     //   // loaderTxt.hidden = false;
     Loading.standard('Loading data, please wait...');
     showItemEl.innerHTML = '';
